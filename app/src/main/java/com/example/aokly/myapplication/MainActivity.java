@@ -45,10 +45,11 @@ public class MainActivity extends ListActivity {
         builder.setPositiveButton("Ок", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this,text,Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
 
             }
         });
-
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }
